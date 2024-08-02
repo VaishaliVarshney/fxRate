@@ -17,4 +17,13 @@ public class FxRate {
     private String targetCurrency;
     private Double exchangeRate;
     private String date;
+    public FxRate() {
+    }
+    public FxRate(Long id, String sourceCurrency, String targetCurrency, Double exchangeRate, String date) {
+        this.id = id;
+        this.sourceCurrency = sourceCurrency;
+        this.targetCurrency = targetCurrency;
+        this.exchangeRate = exchangeRate;
+        this.date = date;
+    }
 }
